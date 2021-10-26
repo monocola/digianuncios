@@ -1,0 +1,20 @@
+body{
+    background-image: url("/img/anuncia.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.opacity{
+    background-color:rgb(255,0,0);
+    opacity:0.3; /* Opacidad 60% */
+    width:200px;
+    height:40px;
+}
+
+
