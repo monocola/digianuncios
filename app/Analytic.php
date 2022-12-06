@@ -8,6 +8,13 @@ class Analytic extends Model
 {
     protected $table = 'analytics';
 
+    /**
+    * The "type" of the primary key ID.
+    *
+    * @var integer
+    */
+    protected $keyType = 'integer';
+
     protected $fillable = ['category_name','location','ip','user_id'];
 
 

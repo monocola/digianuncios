@@ -11,6 +11,8 @@ class Anuncio extends Model
     use SoftDeletes;
     protected $table = 'anuncios';
 
+    protected $keyType = 'integer';
+
     protected $fillable = ['comentario', 'estado','deleted_at'];
 
    public  function estado($estado){
