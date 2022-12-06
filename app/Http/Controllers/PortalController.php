@@ -34,6 +34,8 @@ class PortalController extends Controller
 
     public function index(){
 
+
+
        //***************** INICIO  COUNTRY  **********************
         //SI USUARIO SE HA LOGEADO
         if(Auth::check()){

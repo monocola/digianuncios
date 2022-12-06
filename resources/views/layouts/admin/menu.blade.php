@@ -115,31 +115,6 @@
                         </li>
 
                         <li class="header-notification">
-                            <a href="#!">
-                                <i class="ti-window"></i>
-                                @if( $anunciosPendientes->count()> 0 ) <span class="badge">{{ $anunciosPendientes->count() }} </span> @endif
-                            </a>
-                            <ul class="show-notification">
-                                <li>
-                                    <h6>ANUNCIOS POR APROBAR</h6>
-
-                                </li>
-                                @foreach ($anunciosPendientes as  $anunP)
-                                <li>
-                                    <div class="media">
-                                        <img class="d-flex align-self-center" src="{{ asset('anuncios/'.$anunP->banner ) }}" alt="Generic placeholder image">
-                                        <div class="media-body">
-                                            <h5 class="notification-user"><a href="/admin/AdminAnuncio/{{ $anunP->id }}/detalle">{{  $anunP->titulo }}</a></h5>
-                                            <p class="notification-msg">{{  $anunP->descripcion }}</p>
-                                            <span class="notification-time">{{ $anunP->created_at->diffForHumans() }}</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                @endforeach
-                            </ul>
-                        </li>
-
-                        <li class="header-notification">
                             <a href="{{ url('/admin/notifications') }}">
                                 <i class="ti-bell"></i>
                                 @if( $notificaciones->count()> 0 ) <span class="badge">{{ $notificaciones->count() }}</span> @endif

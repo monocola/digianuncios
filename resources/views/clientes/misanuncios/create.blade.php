@@ -112,7 +112,7 @@
                                         {{ csrf_field() }}
                                         <div class="form-group row">
                                             <div class="col-sm-12">Seleccione  Categoría
-                                                <select class="js-example-basic-single col-sm-12" name="category_name">
+                                                <select class="form-control col-sm-12" name="category_name">
                                                         <option value="" >Seleccione...</option>
                                                     @foreach ($categorias as $key => $cat)
                                                         <option value="{{ $cat->name }}">{{ $cat->name }}</option>
@@ -149,7 +149,7 @@
                                                 <input type="text" name="departamento" class="form-control form-txt-success" style="width: 100%;" value="{{ old('departamento') }}">
                                             </div>
                                             <div class="col-sm-6">Seleccione  Pais
-                                                <select class="js-example-basic-single col-sm-12" name="pais">
+                                                <select class="form-control col-sm-12" name="pais">
                                                     <option value="af">Afganistán</option>
                                                     <option value="al">Albania</option>
                                                     <option value="de">Alemania</option>

@@ -112,7 +112,7 @@
                                         {{ csrf_field() }}
                                         <div class="form-group row">
                                             <div class="col-sm-12">Seleccione  Categoría
-                                                <select class="js-example-basic-single col-sm-12" name="category_name">
+                                                <select class="form-control col-sm-12" name="category_name">
                                                     <option value="" >Seleccione...</option>
                                                     @foreach ($categorias as $key => $cat)
                                                         <option value="{{ $cat->name }}">{{ $cat->name }} - [ {{ $cat->country }} ]</option>
@@ -149,7 +149,7 @@
                                                 <input type="text" name="departamento" class="form-control form-txt-success" style="width: 100%;" value="{{ old('departamento') }}">
                                             </div>
                                             <div class="col-sm-6">Seleccione  Pais
-                                                <select class="js-example-basic-single col-sm-12" name="pais">
+                                                <select class="form-control col-sm-12" name="pais">
                                                     <option value="af">Afganistán</option>
                                                     <option value="al">Albania</option>
                                                     <option value="de">Alemania</option>
@@ -439,7 +439,7 @@
                                                         <div>
                                                             <ul>
                                                                 <li><strong>Formatos Aceptados:</strong></br> jpg, png, jpeg.</li>
-                                                                <li><strong>Dimensiones Aceptadas:</strong></br> Altura máxima: 475px | Ancho Máximo: 370px </li>
+                                                                <li><strong>Se recomienda los siguientes tamaños:</strong></br> Altura mayor a 475px | Ancho Mayor a 370px </li>
                                                                 <li><strong>Tamaño Máximo Aceptado:</strong></br> 3Mb</li>
                                                                 <p></p>
                                                                 <li><strong>Importante: Requisitos Obligatorios.</strong></li>

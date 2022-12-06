@@ -15,7 +15,7 @@
                                         <span style="font-size: 10px;margin-left: 25%;" class="post-date"><a data-toggle="modal" data-target="#exampleModalLong-{{$anun->id}}" href="#"><i class="fas fa-comments"></i> {{$anun->comentarios_count }}</a></span>
                                         <span style="font-size: 10px;" class="post-date"><a ><i class="fas fa-info-circle"></i> info</a></span>
                                     </div>
-                                    <a href="{{ url("/visto/$anun->id/$anun->user_id/anuncio") }}" ><img  src="anuncios/{{$anun->banner}}" title="click para ver detalle" /></a>
+                                    <a href="{{ url("/visto/$anun->id/$anun->user_id/anuncio") }}" ><img width="475" height="370"  src="anuncios/{{$anun->banner}}" title="click para ver detalle" /></a>
                                 </div>
 
                             </div>

@@ -52,10 +52,19 @@
                     <tr>
                         <td style="text-align: left;"><strong>REDES SOCIALES</strong></td>
                         <td style="text-align: justify;">
-                            <i class="fab fa-facebook-square"></i> <a target="_blank" href="{{$anun->facebook}}">{{$anun->facebook}}</a>
-                            <br/><i class="fab fa-twitter-square"></i> <a target="_blank" href="{{$anun->twitter}}">{{$anun->twitter}}</a>
-                            <br/><i class="fab fa-instagram"></i> <a target="_blank" href="{{$anun->instagram}}">{{$anun->instagram}}</a>
-                            <br/><i class="fab fa-pinterest-square"></i> <a target="_blank" href="{{$anun->pinterest}}">{{$anun->pinterest}}</a>
+                        @if($anun->facebook != null)
+                        <a target="_blank" href="{{$anun->facebook}}"><img  width="20" height="20" src="{{asset('img/face1.png')}}" ></a>&nbsp; &nbsp; 
+                        @endif
+                        @if($anun->twitter != null)
+                        <a target="_blank" href="{{$anun->twitter}}"><img  width="20" height="20" src="{{asset('img/twitter1.png')}}" ></a>&nbsp; &nbsp;
+                        @endif
+                        @if($anun->instagram != null)
+                        <a target="_blank" href="{{$anun->instagram}}"><img  width="20" height="20" src="{{asset('img/ig1.png')}}" ></a>&nbsp; &nbsp; 
+                        @endif
+                        @if($anun->pinterest != null)
+                        <a target="_blank" href="{{$anun->pinterest}}"><img  width="20" height="20" src="{{asset('img/pint1.png')}}" ></a>
+                        @endif
+                         
                         </td>
                     </tr>
                     <tr>

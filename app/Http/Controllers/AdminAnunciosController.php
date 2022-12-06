@@ -80,7 +80,8 @@ class AdminAnunciosController extends Controller
             'departamento' => 'required',
             'telefono' => 'required',
             'correo' => 'required',
-            'archivo' => 'required|mimes:jpeg,bmp,png,jpg|dimensions:max_width=370,max_height=475|max:3072',
+            'archivo' => 'required|mimes:jpeg,bmp,png,jpg|max:3072',
+            //'archivo' => 'required|mimes:jpeg,bmp,png,jpg|dimensions:max_width=370,max_height=475|max:3072',
 
 
 

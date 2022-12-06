@@ -29,15 +29,15 @@
                 <li><a class="nav-link" title="Preguntas frecuentes" href="{{ url('/preguntas-frecuentes') }}">Preguntas frecuentes</a></li>
 
                 @guest
-                    <li><a class="nav-link" title="Iniciar Sessión"
-                           href="{{url('login')}}">Iniciar Sessión</a>
+                    <li><a class="nav-link" title="Iniciar Sesión"
+                           href="{{url('login')}}">Iniciar Sesión</a>
 
                     </li>
                 @else
                     @if(Auth::user()->tipo == 1)
                         <li><a class="nav-link"
                                href="{{ route('logout') }}" onclick="event.preventDefault();
-                                   document.getElementById('logout-form').submit();"><strong>Cerrar Sessión</strong></a>
+                                   document.getElementById('logout-form').submit();"><strong>Cerrar Seßsión</strong></a>
                         </li>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf

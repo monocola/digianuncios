@@ -148,18 +148,18 @@ return [
 
     'default_location' => [
         'ip' => '127.0.0.0',
-        'iso_code' => 'US',
-        'country' => 'United States',
-        'city' => 'New Haven',
+        'iso_code' => 'PE',
+        'country' => 'Peru',
+        'city' => 'Lima',
         'state' => 'CT',
         'state_name' => 'Connecticut',
         'postal_code' => '06510',
         'lat' => 41.31,
         'lon' => -72.92,
-        'timezone' => 'America/New_York',
+        'timezone' => 'America/Lima',
         'continent' => 'NA',
         'default' => true,
-        'currency' => 'USD',
+        'currency' => 'PEN',
     ],
 
 ];
