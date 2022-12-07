@@ -19,6 +19,8 @@
         "laravel/ui": "^3.0",
         "laravelcollective/html": "^6.3",
         "nesbot/carbon": "^2.21",
+        "symfony/css-selector": "^6.2",
+        "symfony/deprecation-contracts": "^3.1",
         "torann/geoip": "^1.0"
     },
     "require-dev": {
